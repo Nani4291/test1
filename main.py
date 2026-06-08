@@ -25,11 +25,11 @@ from telethon.tl.types import User
 
 # ━━━━━━━━━━━━━━━━━━━━ CONFIGURATION ━━━━━━━━━━━━━━━━━━━━
 
-API_ID = 1234                  # Your Telegram API ID
-API_HASH = ""  # Your Telegram API Hash
-BOT_TOKEN = ""  # Bot token from @BotFather
+API_ID = int(os.getenv("API_ID"))                  # Your Telegram API ID
+API_HASH = os.getenv("API_HASH")  # Your Telegram API Hash
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # Bot token from @BotFather
 
-OWNER_ID = 1234             # LEGENDX - Supreme Authority
+OWNER_ID = int(os.getenv("OWNER_ID"))             # LEGENDX - Supreme Authority
 
 CONFIG_FILE = "config.json"
 USERS_FILE = "users.json"
